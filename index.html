@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Congratulations!</title>
+</head>
+<body>
+
+
+	<div class="container-fluid header">
+        <div class="row header-logo">
+            <img class="img-responsive" src="gmd-logo.fs8.png" />
+        </div>
+    </div>
+
+    <div class="container-fluid introduction">
+        <div class="row ">
+            <div class="col-xs-12 text-center">
+                <h1>Congratulations!</h1>
+                <p>We are giving visitors the chance to be <br class="visible-xs-block" /> our next jackpot winner!</p>
+                <p> Check Out Last Months Winner Reaction Video</p>
+                <div><img src="ezgif.com-video-to-gif.gif" width="100%"></div>
+
+                <button class="btn btn-block btn--scroll" id="scrollBtn">
+                    Spin to become the next millionaire!
+                </button>
+
+                <div class="container-fluid jackpot">
+                    <div class="row jackpot-slot">
+                        <div class="col-xs-12 text-center">
+                            <p>The jackpot recently went off at just over $3 million&hellip; 5 times!<br class="hidden-xs" /> It must go off again soon. Spin the wheel below to see if you are the lucky one.</p>
+                            <div class="slot-machine">
+                                <img class="slot-machine__frame" src="slot-machine-frame.fs8.png" />
+
+                                <span class="slot-machine__ticker progressive-jackpot-ticker" data-jackpot-id="15"></span>
+
+                                <div class="slot-machine__reel-container">
+                                    <img class="slot-machine__reel slot-machine__reel-1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                </div>
+                                <div class="slot-machine__reel-container">
+                                    <img class="slot-machine__reel slot-machine__reel-2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                </div>
+                                <div class="slot-machine__reel-container">
+                                    <img class="slot-machine__reel slot-machine__reel-3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                </div>
+                            </div>
+                            <button class="btn btn-block btn--spin" id="spinBtn">
+                                Spin Now !
+                            </button>
+
+                            <div class="spin-remainder" id="spinRemainder">
+                                <p>Sorry, you missed!</p>
+                                <p><strong><u>You have (<span id="remainderCount">5</span>) more spins</u></strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid survey">
+                    <div class="row questions">
+                        <div class="col-xs-12 text-center">
+                            <div class="question" id="question-1">
+                                <p class="survey-question">
+                                    Question 1 of 4: <br>
+                                    Have you ever won anything on your Mobile?
+                                </p>
+
+                                <button class="btn btn-block btn--answer btn-question-1">Yes, I’m very lucky</button>
+                                <button class="btn btn-block btn--answer btn-question-1">No, I never win anything, maybe now is my time</button>
+                                <button class="btn btn-block btn--answer btn-question-1">No, I have terrible luck all the time</button>
+                            </div>
+
+                            <div class="question" id="question-2">
+                                <p class="survey-question">
+                                    Question 2 of 4: <br>
+                                    Did you hear about D.P winning the world record mobile casino jackpot $11,610,536.59 in August 2016?
+                                </p>
+
+                                <button class="btn btn-block btn--answer btn-question-2">Yes, I saw this news</button>
+                                <button class="btn btn-block btn--answer btn-question-2">No, this is the first I’ve heard</button>
+                            </div>
+
+                            <div class="question" id="question-3">
+                                <p class="survey-question">
+                                    Question 3 of 4: <br>
+                                    Our mobile jackpot is now over $1,000,000 again. What would you do if you won it?
+                                </p>
+
+                                <button class="btn btn-block btn--answer btn-question-3">Travel around the world</button>
+                                <button class="btn btn-block btn--answer btn-question-3">Buy a new car</button>
+                                <button class="btn btn-block btn--answer btn-question-3">Quit my job and never work again</button>
+                            </div>
+
+                            <div class="question" id="question-4">
+                                <p class="survey-question">
+                                    Question 4 of 4: <br>
+                                    Are you ready to TRY YOUR LUCK?
+                                </p>
+
+                                <button class="btn btn-block btn--answer btn-question-4">Yes, let me play now!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row loading">
+                        <div class="col-xs-12 text-center">
+                            <h2>Collating your answers</h2><br>
+                            <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+
+                            <div class="checks">
+                                <p id="check1">No duplicate registrations found.</p>
+                                <p id="check2">Your IP is unique</p>
+                                <p id="check3">Congratulations! 125 free spins reserved!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row cta">
+                        <div class="col-xs-12 text-center">
+                            <p>
+                                Your answers qualify!
+                            </p>
+
+                            <img src="gmd-logo.fs8.png">
+
+                            <a class="btn btn-block btn--cta" href="http://go.securedtrk.com/click" target="_blank">Claim Your 125 Chances</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="winners-wrapper">
+                    <img class="winners-image" id="winnersImageDP" src="dp-winner.fs8.png" />
+                    <img class="winners-image" id="winnersImageGM" src="gm-winner.fs8.png" />
+                    <img class="winners-image" id="winnersImageIR" src="ir-winner.fs8.png" />
+                    <div class="winners-caption" id="winnersCaption">
+                        D.P. <span>won</span> $11.6 million and broke <br class="visible-xs-block" /> a&nbsp;world&nbsp;record
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.zxcdn.com/webcdn/js/ProgressiveJackpotTicker.min.js"></script>
+    <script>
+        $(document).progressiveJackpotTicker({
+        });
+    </script>
+    <script>
+        // Loop through the winners
+        (function winnerRotation() {
+            var step = 4000;
+            window.animationOffset = 250;
+
+            setTimeout("$('#winnersImageDP').fadeOut(animationOffset);", step);
+
+            setTimeout("$('#winnersImageIR').fadeIn(animationOffset);", step += animationOffset);
+            setTimeout("$('#winnersCaption').html('I.R. <span>won</span> $3.3 million on her <br class=visible-xs-block /> mobile&nbsp;phone');", step);
+            setTimeout("$('#winnersImageIR').fadeOut(animationOffset);", step += step);
+
+            setTimeout("$('#winnersImageGM').fadeIn(animationOffset);", step += animationOffset);
+            setTimeout("$('#winnersCaption').html('G.M. <span>won</span> $3.9 million from <br class=visible-xs-block /> a&nbsp;free&nbsp;bonus');", step);
+            setTimeout("$('#winnersImageGM').fadeOut(animationOffset);", step += step);
+
+            setTimeout("$('#winnersImageDP').fadeIn(animationOffset);", step += animationOffset);
+            setTimeout("$('#winnersCaption').html('D.P. <span>won</span> $11.6 million and broke <br class=visible-xs-block /> a&nbsp;world&nbsp;record');", step);
+
+            setTimeout(winnerRotation, step);
+        })();
+
+        // Makes page scroll to spinning wheel
+        $("#scrollBtn").click(function () {
+            $("html, body").animate({
+                scrollTop: $('#spinBtn').offset().top
+            }, 1000);
+        });
+
+        // Each spin produces a different result, needs a counter
+        var spinCount = 0;
+
+        // Makes wheel scrolls
+        $("#spinBtn").click(function () {
+            if(spinCount == 0) {
+                $(".slot-machine__reel-1").css("margin-top", "-9852px");
+                $(".slot-machine__reel-2").css("margin-top", "-9713px");
+                $(".slot-machine__reel-3").css("margin-top", "-9643px");
+
+                setTimeout("$('#spinBtn').html('Try again');", 3000);
+                setTimeout("$('#spinRemainder').show(1000);", 3000);
+                setTimeout("$('html, body').animate({ scrollTop: '2000' });", 4000);
+            } else if (spinCount == 1) {
+                $('#spinRemainder').hide(1000);
+                setTimeout("$('#remainderCount').html('4');", 1001);
+
+                $(".slot-machine__reel-1").css("margin-top", "-4688px");
+                $(".slot-machine__reel-2").css("margin-top", "-4616px");
+                $(".slot-machine__reel-3").css("margin-top", "-4544px");
+
+                setTimeout("$('#spinRemainder').show(1000);", 3000);
+                setTimeout("$('html, body').animate({ scrollTop: '2000' });", 4000);
+            } else if (spinCount == 2) {
+                $('#spinRemainder').hide(1000);
+
+                $(".slot-machine__reel-1").css("transition", "margin-top 4s");
+                $(".slot-machine__reel-2").css("transition", "margin-top 3s");
+                $(".slot-machine__reel-3").css("transition", "margin-top 7s");
+
+                $(".slot-machine__reel-1").css("margin-top", "-295px");
+                $(".slot-machine__reel-2").css("margin-top", "-295px");
+                $(".slot-machine__reel-3").css("margin-top", "-295px");
+
+                // Then fade the slot area out, and put the survey in
+                setTimeout("$('.jackpot').fadeOut(250);", 8000);
+                setTimeout("$('.survey').fadeIn(250);", 8250);
+
+                // Change the text in the red bar
+                setTimeout("$('#scrollBtn').html('Congratulations! You’ve won 125 chances for just $10!');", 8250);
+            }
+
+            spinCount++;
+        });
+
+        // Fading things in and out when survey choice clicked
+        $(".btn-question-1").click(function () {
+            $("#question-1").fadeOut(0);
+            $("#question-2").fadeIn(500);
+        });
+        $(".btn-question-2").click(function () {
+            $("#question-2").fadeOut(0);
+            $("#question-3").fadeIn(500);
+        });
+        $(".btn-question-3").click(function () {
+            $("#question-3").fadeOut(0);
+            $("#question-4").fadeIn(500);
+        });
+        $(".btn-question-4").click(function () {
+            $("#question-4").fadeOut(0);
+
+            // Starts the 'loading' sequence
+            $(".loading").fadeIn(0);
+
+            // Checks messages.
+            setTimeout(function () { $("#check1").fadeIn(1000); }, 3000);
+            setTimeout(function () { $("#check2").fadeIn(1000); }, 4500);
+            setTimeout(function () { $("#check3").fadeIn(1000); }, 6000);
+
+            // Removes loading and adds CTA
+            setTimeout(function () { $(".loading").fadeOut(); }, 7500);
+            setTimeout(function () { $(".cta").fadeIn(); }, 7500);
+        });
+    </script>
+</body>
+</html>
