@@ -62,187 +62,142 @@ img {
 /* ==========================================================================
    Introduction
    ========================================================================== */
-
 .introduction {
     position: relative;
-
     margin-bottom: 20px;
 }
-
 .introduction::before {
     content: "";
-
     position: absolute;
     left: 0;
     top: 0;
-
     width: 100%;
     height: 350px;
-
     background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 45% ),
                 linear-gradient(to left,  rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 45% ),
                 radial-gradient(ellipse farthest-side at center bottom, rgba(247, 196, 19, 1) 0%, rgba(0, 0, 0, 0.05)  85%),
                 radial-gradient(ellipse farthest-side at center top,    rgba(247, 196, 19, 1) 0%, rgba(0, 0, 0, 0.05)  77%),
                 url("foxtail.png") repeat;
 }
-
 .introduction h1 {
     color: yellow;
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-
     text-shadow: 0 1px 1px black;
 }
-
 .introduction p {
     text-shadow: 0 1px 1px black;
 }
-
 .introduction .winners-wrapper {
     position: relative;
-
     display: inline-block;
-
     background: lightgrey;
-
     border: 1px solid rgba(247, 196, 19, 1);
 }
-
 .introduction .winners-wrapper::before,
 .introduction .winners-wrapper::after {
     content: "";
     z-index: 10;
-
     position: absolute;
-
     width: 65px;
     height: 65px;
-
     background: url("arrow.png") no-repeat;
     background-size: cover;
 }
-
 .introduction .winners-wrapper::before {
     right: -30px;
     top: -10px;
 }
-
 .introduction .winners-wrapper::after {
     left: -30px;
     bottom: -40px;
-
     -webkit-transform: scaleX(-1) rotate(-40deg);
     transform: scaleX(-1) rotate(-40deg);
-
     filter: FlipH;
     -ms-filter: "FlipH";
 }
-
 .introduction .winners-image,
 .introduction .winners-caption {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
 }
-
 .introduction .winners-caption {
     position: relative;
-
     padding: 10px;
-
     color: rgba(247, 196,  19, 1);
     font-size: 13px;
-
     background: black;
 }
-
 .introduction .winners-caption::after {
     content: "";
     z-index: -1;
-
     position: absolute;
     left: -25%;
     bottom: -8px;
-
     width: 150%;
     height: 16px;
-
     background: radial-gradient(ellipse farthest-side at center center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0)  99%);
 }
-
 .introduction .winners-caption span {
     color: white;
 }
-
 .introduction #winnersImageGM,
 .introduction #winnersImageIR,
 .introduction #winnersCaptionGM,
 .introduction #winnersCaptionIR {
     display: none;
 }
-
 @media screen and (max-width: 768px) {
     .introduction {
         padding-right: 0;
         padding-left: 0;
     }
-
     .introduction::before {
         height: 310px;
     }
-
     .introduction h1 {
         font-size: 24px;
     }
-
     .introduction .winners-wrapper::before,
     .introduction .winners-wrapper::after {
         width: 40px;
         height: 40px;
     }
-
     .introduction .winners-wrapper::before {
         right: -15px;
         top: -10px;
     }
-
     .introduction .winners-wrapper::after {
         left: -20px;
         bottom: -10px;
     }
-
     .introduction .winners-image,
     .introduction .winners-caption {
         width: 290px;
     }
 }
 
-/* Jackpot slot
+/* ==========================================================================
+   Jackpot slot
    ========================================================================== */
-
 .jackpot {
     position: relative;
-
     padding-top: 15px;
-
     background: url("bg-glowsplosion.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1300px 515px;
 }
-
 .jackpot::before {
     content: "";
     z-index: -1;
-
     position: absolute;
     left: 0;
     top: 0;
-
     width: 100%;
     height: 515px;
-
     background: black;
 }
 
