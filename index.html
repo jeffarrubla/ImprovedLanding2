@@ -142,11 +142,10 @@
         </div>
     </div>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://cdn.zxcdn.com/webcdn/js/ProgressiveJackpotTicker.min.js"></script>
     <script type="text/javascript">
-        $(document).progressiveJackpotTicker({
-        });
+        // initializate the jackpot ticker
+        $(document).progressiveJackpotTicker({});
         // Loop through the winners
         (function winnerRotation() {
             var step = 4000;
@@ -169,7 +168,7 @@
         })();
 
         // Makes page scroll to spinning wheel
-        $("#scrollBtn").click(function () {
+        $("#scrollBtn").click(function(){
             $("html, body").animate({
                 scrollTop: $('#spinBtn').offset().top
             }, 1000);
@@ -184,18 +183,15 @@
                 $(".slot-machine__reel-1").css("margin-top", "-9852px");
                 $(".slot-machine__reel-2").css("margin-top", "-9713px");
                 $(".slot-machine__reel-3").css("margin-top", "-9643px");
-
                 setTimeout("$('#spinBtn').html('Try again');", 3000);
                 setTimeout("$('#spinRemainder').show(1000);", 3000);
                 setTimeout("$('html, body').animate({ scrollTop: '2000' });", 4000);
             } else if (spinCount == 1) {
                 $('#spinRemainder').hide(1000);
                 setTimeout("$('#remainderCount').html('4');", 1001);
-
                 $(".slot-machine__reel-1").css("margin-top", "-4688px");
                 $(".slot-machine__reel-2").css("margin-top", "-4616px");
                 $(".slot-machine__reel-3").css("margin-top", "-4544px");
-
                 setTimeout("$('#spinRemainder').show(1000);", 3000);
                 setTimeout("$('html, body').animate({ scrollTop: '2000' });", 4000);
             } else if (spinCount == 2) {
@@ -204,19 +200,15 @@
                 $(".slot-machine__reel-1").css("transition", "margin-top 4s");
                 $(".slot-machine__reel-2").css("transition", "margin-top 3s");
                 $(".slot-machine__reel-3").css("transition", "margin-top 7s");
-
                 $(".slot-machine__reel-1").css("margin-top", "-295px");
                 $(".slot-machine__reel-2").css("margin-top", "-295px");
                 $(".slot-machine__reel-3").css("margin-top", "-295px");
-
                 // Then fade the slot area out, and put the survey in
                 setTimeout("$('.jackpot').fadeOut(250);", 8000);
                 setTimeout("$('.survey').fadeIn(250);", 8250);
-
                 // Change the text in the red bar
                 setTimeout("$('#scrollBtn').html('Congratulations! You’ve won 125 chances for just $10!');", 8250);
             }
-
             spinCount++;
         });
 
@@ -235,15 +227,12 @@
         });
         $(".btn-question-4").click(function () {
             $("#question-4").fadeOut(0);
-
             // Starts the 'loading' sequence
             $(".loading").fadeIn(0);
-
             // Checks messages.
             setTimeout(function () { $("#check1").fadeIn(1000); }, 3000);
             setTimeout(function () { $("#check2").fadeIn(1000); }, 4500);
             setTimeout(function () { $("#check3").fadeIn(1000); }, 6000);
-
             // Removes loading and adds CTA
             setTimeout(function () { $(".loading").fadeOut(); }, 7500);
             setTimeout(function () { $(".cta").fadeIn(); }, 7500);
