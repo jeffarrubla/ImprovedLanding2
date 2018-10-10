@@ -1,84 +1,66 @@
 /* ==========================================================================
    Shared styles
    ========================================================================== */
-
 html, body {
     overflow-x: none;
 }
-
 body {
     min-height: 100vh;
-
     color: white;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-
     border-top: 5px solid rgba(247, 196, 19, 1);
 }
-
 .row {
     margin: 0 auto;
 }
-
 img {
     vertical-align: middle;
     border: 0;
 }
-
-
-/* Buttons
+/* ==========================================================================
+   Buttons
    ========================================================================== */
-
 .btn {
     white-space: normal;
 }
-
 .btn:active,
 .btn:hover,
 .btn:focus {
     color: inherit;
 }
-
 .btn--scroll {
     z-index: 1;
-
     position: relative;
-
     margin: 25px auto 0;
     padding: 10px;
-
     color: white;
     font-weight: 700;
-
     background: rgba(199, 17, 16, 1);
-
     border-radius: 0;
-
     transition: background 250ms;
 }
-
 /* ==========================================================================
    Page sections
    ========================================================================== */
 
-/* Header
+/* ==========================================================================
+   Header
    ========================================================================== */
-
 .header {
     background: -webkit-radial-gradient(ellipse farthest-side at center bottom, rgba(89, 89, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background: radial-gradient(ellipse farthest-side at center bottom, rgba(89, 89, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
-
 .header-logo {
     max-width: 280px;
     margin: 0.5em auto;
 }
-
 /* ==========================================================================
    Components
    ========================================================================== */
 
-/* Introduction
+/* ==========================================================================
+   Introduction
    ========================================================================== */
 
 .introduction {
